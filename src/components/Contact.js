@@ -91,12 +91,15 @@ const Contact = () => {
         {status && <p className="mt-4">{status}</p>}
       </Fade>
 
-      {/* Image Placeholder */}
+      {/* Office Image */}
       <div className="my-5">
         <h2>Our Office</h2>
-        <div style={{ width: '100%', height: '400px', backgroundColor: '#ddd', marginBottom: '20px' }}>
-          {/* Placeholder for an office image */}
-          <p className="text-center">[Image Placeholder - Office Image]</p>
+        <div style={{ width: '100%', height: '400px', marginBottom: '20px' }}>
+          <img
+            src="/images/office.jpg" // Corrected image path
+            alt="Our Office"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
       </div>
     </Container>

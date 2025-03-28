@@ -21,19 +21,31 @@ const Home = () => {
           </Fade>
         </Col>
       </Row>
-      
-      {/* Image Placeholder */}
+
+      {/* Vision Section with Image */}
       <div className="my-5">
         <h2>Our Vision</h2>
         <p>
           At RLSS Enterprises, we believe in providing strategic recruitment solutions that align with your business goals.
           Our experts carefully select candidates who bring value and innovation to your organization.
         </p>
-        <div style={{ width: '100%', height: '400px', backgroundColor: '#ddd', marginBottom: '20px' }}>
-          {/* Placeholder for an image */}
-          <p className="text-center">[Image Placeholder - Vision Image]</p>
+        <div style={{ width: '100%', height: '400px', marginBottom: '20px' }}>
+          <img src="/images/logo.jpg" alt="Vision" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
       </div>
+
+      {/* Footer Section */}
+      <footer style={{ position: 'relative', bottom: 0, left: 0, width: '100%', padding: '10px 0', textAlign: 'left', backgroundColor: '#f8f9fa' }}>
+        <Container>
+          <Row>
+            <Col>
+              <p className="mb-0" style={{ fontSize: '14px', color: '#555' }}>
+                Developed by Prateek
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
     </Container>
   );
 };

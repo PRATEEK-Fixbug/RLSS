@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
@@ -39,15 +39,18 @@ const About = () => {
         </Col>
       </Row>
 
-      {/* Image Placeholder */}
+      {/* Our Team Section */}
       <div className="my-5">
         <h2>Our Team</h2>
         <p>
           Meet the dedicated professionals who make RLSS Enterprises a leader in the recruitment industry.
         </p>
-        <div style={{ width: '100%', height: '400px', backgroundColor: '#ddd', marginBottom: '20px' }}>
-          {/* Placeholder for an image */}
-          <p className="text-center">[Image Placeholder - Team Image]</p>
+        <div style={{ width: '100%', height: '400px', marginBottom: '20px' }}>
+          <img
+            src="/images/team.jpg" // Corrected image path
+            alt="Our Team"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
       </div>
     </Container>

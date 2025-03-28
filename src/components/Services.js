@@ -60,12 +60,15 @@ const Services = () => {
         </Col>
       </Row>
 
-      {/* Image Placeholder */}
+      {/* Service Implementation Image */}
       <div className="my-5">
         <h2>Service Implementation</h2>
-        <div style={{ width: '100%', height: '400px', backgroundColor: '#ddd', marginBottom: '20px' }}>
-          {/* Placeholder for an image */}
-          <p className="text-center">[Image Placeholder - Service Image]</p>
+        <div style={{ width: '100%', height: '400px', marginBottom: '20px' }}>
+          <img
+            src="/images/alt.jpg" // Corrected image path
+            alt="Service Implementation"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
       </div>
     </Container>
